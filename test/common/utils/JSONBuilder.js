@@ -162,7 +162,7 @@ describe('The JSONBuilder class', function() {
       }).to.throw(Error);
     });
 
-    it('should throw an Error if date is not an Object', function() {
+    it('should throw an Error if value is not an Object', function() {
       expect(function() {
         new jmap.JSONBuilder().appendObject('obj', []);
       }).to.throw(Error);

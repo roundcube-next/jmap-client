@@ -119,7 +119,7 @@ describe('The Client class', function() {
       expect(client.mailCapabilities).to.be.an.instanceof(jmap.MailCapabilities);
     });
 
-    it('should accept a plain json object', function() {
+    it('should accept a plain authAccess object', function() {
       var client = defaultClient().withAuthAccess(authAccess.toJSONObject());
 
       expect(client.authToken).to.equal(authAccess.accessToken);
